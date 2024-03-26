@@ -11,7 +11,7 @@ function Homepage({ data }) {
             state_province: item["state-province"],
             web_pages: item.web_pages
         });
-    }
+    };
 
     return (
         <Table 
@@ -41,7 +41,8 @@ function Homepage({ data }) {
                         <td>{item["state-province"]}</td>
                         <td> <button onClick={() => handleAdd(item)} style={{ borderRadius: '20px' ,backgroundColor: 'lightgreen',color: 'black'}}>Add to Favourite</button></td>
             </tr>
-                ))}
+                ))
+                }
             </tbody>
         </Table>
     );
