@@ -22,19 +22,20 @@ function Homepage({ data }) {
                 backgroundColor: 'lightyellow', 
                 color: 'black', 
                 border: '2px solid black',
-                fontWeight: 'bold' 
+                fontWeight: 'bold' ,
+        
             }}
         >
             <thead>
                 <tr>
-                    <th>Web Pages</th><th>Name</th><th>Country</th><th>State/Province</th><th>Favourite</th>
+                    <th >Web Pages</th><th>Name</th><th>Country</th><th>State/Province</th><th>Favourite</th>
                 </tr>
             </thead>
 
-         <tbody>
+         <tbody >
                 {data.map((item, index) => (
                     <tr key={index}>
-                        <td><a href={item.web_pages}>{item.web_pages}</a></td>
+                        <td style={{height:"60px"}}><a href={item.web_pages}>{item.web_pages}</a></td>
                         <td>{item.name}</td>
                         <td>{item.country}</td>
                         <td>{item["state-province"]}</td>

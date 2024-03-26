@@ -29,9 +29,6 @@ app.post("/university", async (req, res) => {
 
 });
 
-
-
-
 sequelize.sync().then(() => {
     app.listen(2500, () => {
         console.log("Server is running at port 2500");
